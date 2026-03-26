@@ -18,7 +18,7 @@ function getSlotsExpression(attributes: string) {
   return match?.[1] || match?.[2] || '$slots'
 }
 
-export default function forwardSlotsPlugin() {
+export default function vueForwardSlots() {
   return {
     name: 'vite-plugin-vue-forward-slots',
     enforce: 'pre',

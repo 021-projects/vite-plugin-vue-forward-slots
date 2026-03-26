@@ -20,10 +20,10 @@ bun install vite-plugin-vue-forward-slots
 // vite.config.ts
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import forwardSlotsPlugin from 'vite-plugin-vue-forward-slots'
+import vueForwardSlots from 'vite-plugin-vue-forward-slots'
 
 export default defineConfig({
-  plugins: [forwardSlotsPlugin(), vue()],
+  plugins: [vueForwardSlots(), vue()],
 })
 ```
 
