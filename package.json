@@ -14,7 +14,7 @@
     "type": "git",
     "url": "https://github.com/021-projects/vite-plugin-vue-forward-slots.git"
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Vite plugin that compiles <ForwardSlots> into native Vue slot forwarding syntax.",
   "license": "MIT",
   "type": "module",
