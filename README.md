@@ -11,7 +11,7 @@ This plugin avoids that class of problems by compiling `ForwardSlots` usage dire
 ## Install
 
 ```bash
-bun install vite-plugin-vue-forward-slots
+bun install vite-plugin-vue-forward-slots -D
 ```
 
 ## Usage
