@@ -1,0 +1,43 @@
+{
+  "name": "vite-plugin-vue-forward-slots",
+  "author": "Genesis Studio LLC <studio@gnz.is> (https://studio.gnz.is)",
+  "version": "0.1.0",
+  "description": "Vite plugin that compiles <ForwardSlots> into native Vue slot forwarding syntax.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "bun run build && bun run test"
+  },
+  "devDependencies": {
+    "@vue/compiler-dom": "^3.5.31",
+    "@vue/compiler-sfc": "^3.5.31",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  },
+  "peerDependencies": {
+    "vite": "^5 || ^6 || ^7",
+    "vue": "^3.3.0"
+  },
+  "funding": [
+    {
+      "type": "individual",
+      "url": "https://btcpay.gnz.is/apps/2iTijXXYdXMZstbGV8RtdXceWDEc/crowdfund"
+    }
+  ]
+}
